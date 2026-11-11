@@ -1,0 +1,11 @@
+sheets/
+.env
+*.json
+!firebase.json
+!firestore.indexes.json
+!package.json
+!package-lock.json
+__pycache__/
+.venv/
+venv/
+.DS_Store
