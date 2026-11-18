@@ -405,12 +405,12 @@ class FirestoreRestClient:
 async def run_sync(args: argparse.Namespace) -> None:
     load_dotenv(BASE_DIR / ".env")
 
-    token = os.getenv("DISCORD_BOT_TOKEN")
+    token = os.getenv("DISCORD_TOKEN")
     channel_id_str = os.getenv("DISCORD_CHANNEL_ID")
     project_id = os.getenv("FIREBASE_PROJECT_ID")
 
     if not token:
-        sys.exit("Error: DISCORD_BOT_TOKEN is not set in .env")
+        sys.exit("Error: DISCORD_TOKEN is not set in .env")
     if not channel_id_str:
         sys.exit("Error: DISCORD_CHANNEL_ID is not set in .env")
     if not project_id:

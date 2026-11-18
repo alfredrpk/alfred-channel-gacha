@@ -21,4 +21,4 @@ sync_discord_videos goes through a certain discord server, gets every message wi
 
 flask_app.py is a flask app I run that hosts an API endpoint for getting a random video from the firestore collection
 
-The actual discord bot lives in a cloudflare worker running serverless
+server.js is the cloudflare worker code for the discord bot to serve videos
