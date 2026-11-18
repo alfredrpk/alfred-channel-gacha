@@ -1,5 +1,8 @@
 sheets/
 .env
+.firebase/
+.wrangler/
+node_modules/
 *.json
 !firebase.json
 !firestore.indexes.json
